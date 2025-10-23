@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Laboratorio Hector Mejía</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f6f9ff;
+        }
+
+        .watch-demo {
+            display: flex;
+            color: #216cef;
+            font-weight: 600;
+            font-size: 18px;
+        }
+
+        .watch-demo .circle {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: #90afff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: inset 0 8px 18px rgba(22, 83, 188, 0.15);
+            margin-right: 12px;
+            transition: transform .2s ease, background-color .2s ease;
+        }
+
+        .watch-demo svg {
+            width: 22px;
+            height: 22px;
+            fill: #1351bd;
+        }
+
+        /* Animación imagen */
+        .imagen {
+            animation: subirBajar 3s ease-in-out infinite;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes subirBajar {
+            0% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-20px);
+            }
+
+            100% {
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12 col-lg-6">
+                    <h1>Transform Your Digital Future</h1>
+                    <h5 class="text-secondary">
+                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium
+                        totam rem aperiam.
+                    </h5>
+
+                    <div class="row g-3 mt-3">
+                        <div class="col-auto">
+                            <button class="btn btn-primary">START JOURNEY</button>
+                        </div>
+                        <div class="col-auto">
+                            <a href="#" class="watch-demo text-decoration-none">
+                                <div class="circle">
+                                    <svg viewBox="0 0 24 24">
+                                        <path d="M8 5v14l11-7-11-7z"></path>
+                                    </svg>
+                                </div>
+                                Watch Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-6">
+                    <img src="img/istockphoto-2148674008-612x612.jpg" alt="Office illustration"
+                        class="img-fluid imagen">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+<footer>
+    copyright Hector Mejía 2025 Diseño web 2
+</footer>
+
+</html>
